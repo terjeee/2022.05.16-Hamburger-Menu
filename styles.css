@@ -67,13 +67,9 @@ body .navBar {
 }
 
 body #navBarOpen {
-  z-index: 1;
-
   color: black;
 }
 
-body #navBarExit {
-  z-index: 2;
-
+body #navBarClose {
   color: white;
 }
