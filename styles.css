@@ -1,0 +1,29 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+  background-color: darkslategrey;
+  padding: 0;
+  margin: 0;
+}
+
+main {
+  height: 100vh;
+
+  background-color: whitesmoke;
+}
+
+main .containerMain {
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
