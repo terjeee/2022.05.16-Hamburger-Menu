@@ -15,15 +15,19 @@
     <script defer src="script.js"></script>
     <title>Hamburger Menu</title>
   </head>
+
   <body>
-    <main>
-      <nav class="navCircle">
-        <button id="open"></button>
-        <button id="close"></button>
-      </nav>
-      <div class="containerMain">
-        <h1>navCircle</h1>
-      </div>
-    </main>
+    <div class="overlayNav hidden" id="myNav">
+      <button class="navBar" id="navBarExit">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </div>
+    <button class="navBar" id="navBarOpen"><i class="fa-solid fa-bars"></i></button>
+    <div class="containerFlex">
+      <h1>hamburgerMenu</h1>
+    </div>
   </body>
 </html>

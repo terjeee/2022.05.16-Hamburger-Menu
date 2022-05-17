@@ -1,7 +1,13 @@
+.hidden {
+  display: none;
+}
+
 *,
 *::before,
 *::after {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 html {
@@ -9,21 +15,65 @@ html {
 }
 
 body {
-  background-color: darkslategrey;
-  padding: 0;
-  margin: 0;
-}
-
-main {
   height: 100vh;
 
   background-color: whitesmoke;
 }
 
-main .containerMain {
+body .overlayNav {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background-color: black;
+  opacity: 95%;
+
+  transition: 0.5s ease;
+}
+
+body .overlayNav a {
+  font-size: 3rem;
+  color: white;
+  text-decoration: none;
+
+  margin: 1rem 0;
+}
+
+body .containerFlex {
   height: 100%;
 
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+body .navBar {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  background-color: transparent;
+  border: none;
+
+  margin: 1.25rem 1.5rem;
+
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+body #navBarOpen {
+  z-index: 1;
+
+  color: black;
+}
+
+body #navBarExit {
+  z-index: 2;
+
+  color: white;
 }
