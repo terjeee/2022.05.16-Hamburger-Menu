@@ -53,6 +53,7 @@ body .containerFlex {
 }
 
 body .navBar {
+  z-index: 10;
   position: fixed;
   top: 0;
   left: 0;
@@ -63,13 +64,6 @@ body .navBar {
   margin: 1.25rem 1.5rem;
 
   font-size: 2rem;
-  cursor: pointer;
-}
-
-body #navBarOpen {
   color: black;
-}
-
-body #navBarClose {
-  color: white;
+  cursor: pointer;
 }

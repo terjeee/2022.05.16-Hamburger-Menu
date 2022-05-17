@@ -1,13 +1,18 @@
-const navOpen = document.querySelector(`#navBarOpen`);
-const navClose = document.querySelector(`#navBarClose`);
+const navBar = document.querySelector(`.navBar`);
 const containerOverlay = document.querySelector(`.containerOverlay`);
+const navLinks = document.querySelectorAll(`#navLink`);
 
-navOpen.addEventListener(`click`, function (e) {
-  navOpen.classList.add(`hidden`);
-  containerOverlay.classList.remove(`hidden`);
+navBar.addEventListener(`click`, function (e) {
+  containerOverlay.classList.toggle(`hidden`);
+  navBar.style.color === `white`
+    ? (navBar.style.color = `black`)
+    : (navBar.style.color = `white`);
 });
 
-navClose.addEventListener(`click`, function (e) {
-  navOpen.classList.remove(`hidden`);
-  containerOverlay.classList.add(`hidden`);
-});
+navLinks.forEach(link =>
+  link.addEventListener(`click`, function (e) {
+    console.log(e);
+    console.log(link);
+    containerOverlay.classList.remove(`hidden`);
+  })
+);
